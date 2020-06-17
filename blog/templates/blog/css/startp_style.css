@@ -1,0 +1,204 @@
+@font-face {
+	font-family: "Raleway";
+	src: url('../fonts/RalewayLight.eot');
+	src: url('../fonts/RalewayLight.eot?#iefix')format('embedded-opentype'),
+		url('../fonts/RalewayLight.woff') format('woff'),
+		url('../fonts/RalewayLight.ttf') format('truetype');
+	font-style: normal;
+}  /* - light    */
+
+@font-face {
+	font-family: "Raleway";
+	src: url('../fonts/RalewayRegular.eot');
+	src: url('../fonts/RalewayRegular.eot?#iefix')format('embedded-opentype'),
+		url('../fonts/RalewayRegular.woff') format('woff'),
+		url('../fonts/RalewayRegular.ttf') format('truetype');
+	font-style: normal;
+}  /* - regular  */
+
+body {
+	font-family: Raleway, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding: 0;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+button:active,
+button:focus {
+	outline: none;
+}
+
+/* header */
+
+.header {
+	height: auto;
+	list-style: none;
+	border: 1px black;
+	border-style: none none solid none;
+}
+
+.header div {
+	display: inline-block;
+	font-size: 22px;
+}
+
+.logo_wrapper_left {
+	padding: 13px 0 13px 20px;
+}
+
+.action_wrapper_right {
+	float: right;
+	border: 1px black;
+	border-style: none none none solid;
+}
+
+.action_wrapper_right .loginlink {
+	padding: 13px 0 13px 0;
+	margin-left: 25px;
+	margin-right: 130px;
+}
+
+.action_wrapper_right a {
+	margin-right: 10px;
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+.actions button {
+	padding: 13px 0 13px 0;
+	margin-right: 10px;
+	background: none;
+	border-style: none;
+	vertical-align: middle;
+}
+
+
+/* body - woman block */
+
+.woman_img img {
+	display: flex;
+	float: left;
+	border: 1px black;
+	border-style: none solid none none;
+	width: 1011px;
+	height: 684px;
+	/*
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover; */
+}
+
+.for_woman {
+	font-weight: normal;
+	padding: 327px 75px 328px 87px;
+	float: right;
+	font-size: 23px;
+	letter-spacing: 0.12em;
+}
+
+
+/* body - all block */
+
+.all_container {
+	width: 100%;
+	display: inline-block;
+	border: 1px black;
+	border-style: solid none solid none;
+	text-align: center;
+}
+
+.all_bl {
+	padding: 15px 0px 15px 0px;
+	font-size: 22px;
+	letter-spacing: 0.12em;
+}
+
+
+/* body - man block */
+
+.man_img img {
+	float: right;
+	width: 1011px;
+	height: 684px;
+	border: 1px black;
+	border-style: none none none solid;
+}
+
+.for_man {
+	padding: 327px 75px 328px 87px;
+	float: left;
+	font-size: 22px;
+	letter-spacing: 0.12em;
+}
+
+
+/* registration from*/
+
+.login_form {
+	position: relative;
+	width: 420px;
+	height: 385px;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.5);
+}
+
+/*log in from*/
+
+/* body - footer block */
+
+.footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-weight: lighter;
+	letter-spacing: 0.03em;
+	font-size: 15px;
+	border: 1px black;
+	border-style: solid none none none;
+}
+
+.wewe {
+	display: flex;
+	padding-top: 167px;
+	padding-bottom: 167px;
+}
+
+.greyblock,
+.orblock {
+	width: 336px;
+	height: 300px;
+	border: 1px black;
+	border-style: solid solid solid none;
+}
+
+.orblock {
+	background-color: #B6A475
+}
+
+.greyblock {
+	background-color: #CACACA
+}
+
+.orblock .greyblock,
+.text_footer {
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+.text_footer a {
+	text-decoration: underline;
+}
+
+.text_footer div {
+	margin-bottom: 15px;
+}
