@@ -1,19 +1,14 @@
-<!Docktype html> 
-<html>
-	<head>
-		<title>shop/n/Bangusu</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-	<h1>Добрый день, удачно Вам провести время!</h1> 
-	
-		{% for post in posts %}
-			<div>
-				<p>published: {{ post.published_date }}</p>
-				<h2>{{ post.title }}</h2>
-				<p>{{ post.text }}</p>
-			</div>
-		{% endfor %}
-		
-	</body>
-</html>
+{% extends 'blog/base.html' %}
+
+{% load static %}
+{% block content %}
+{% for post in posts %}
+	<div class="post">
+		<div class="date">
+			<p>Опубликовано: {{ post.published_date }}</p>
+		</div>
+		<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+		<p>{{ post.text|linebreaksbr }}</p>
+	</div>
+{% endfor %}
+{% endblock %}
